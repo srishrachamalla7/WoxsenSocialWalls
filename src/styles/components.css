@@ -1,0 +1,40 @@
+.theme-gradient {
+  background: var(--theme-gradient);
+}
+
+.theme-color {
+  color: var(--theme-color);
+}
+
+.theme-ring {
+  --tw-ring-color: var(--theme-color);
+}
+
+.instagram-card {
+  transition: all 0.3s ease;
+}
+
+.instagram-card:hover {
+  box-shadow: var(--card-hover-shadow);
+}
+
+.auto-scroll {
+  animation: smoothScroll 40s linear infinite;
+}
+
+.column-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+.column-scroll:hover {
+  animation-play-state: paused;
+}
+
+/* Theme selector styles */
+.theme-selector-button {
+  transition: all 0.2s ease-in-out;
+}
+
+.theme-selector-button:hover {
+  transform: translateY(-1px);
+}

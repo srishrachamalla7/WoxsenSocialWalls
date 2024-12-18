@@ -1,0 +1,38 @@
+:root {
+  --instagram-gradient: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+  --facebook-gradient: linear-gradient(45deg, #18ACFE, #0088F7);
+  --youtube-gradient: linear-gradient(45deg, #FF0000, #CC0000);
+  
+  --instagram-color: #E1306C;
+  --facebook-color: #0088F7;
+  --youtube-color: #FF0000;
+  
+  --theme-gradient: var(--instagram-gradient);
+  --theme-color: var(--instagram-color);
+}
+
+[data-theme="instagram"] {
+  --theme-gradient: var(--instagram-gradient);
+  --theme-color: var(--instagram-color);
+  --bg-color: #FAFAFA;
+  --card-hover-shadow: 0 8px 24px rgba(225, 48, 108, 0.15);
+}
+
+[data-theme="facebook"] {
+  --theme-gradient: var(--facebook-gradient);
+  --theme-color: var(--facebook-color);
+  --bg-color: #F0F2F5;
+  --card-hover-shadow: 0 8px 24px rgba(24, 172, 254, 0.15);
+}
+
+[data-theme="youtube"] {
+  --theme-gradient: var(--youtube-gradient);
+  --theme-color: var(--youtube-color);
+  --bg-color: #F9F9F9;
+  --card-hover-shadow: 0 8px 24px rgba(255, 0, 0, 0.15);
+}
+
+body {
+  background-color: var(--bg-color);
+  transition: background-color 0.3s ease;
+}
